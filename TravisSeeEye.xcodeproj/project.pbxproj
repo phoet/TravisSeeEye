@@ -20,9 +20,9 @@
 		9AB36E9613ED87D3000E12C5 /* TravisSeeEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisSeeEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		9AB36EA113ED87D4000E12C5 /* TravisSeeEye-Info.plist */ = {isa = PBXFileReference; path = "TravisSeeEye-Info.plist"; sourceTree = "<group>"; };
+		9AB36EA113ED87D4000E12C5 /* TravisSeeEye-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisSeeEye-Info.plist"; sourceTree = "<group>"; };
 		9AB36EA313ED87D4000E12C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AB36EA513ED87D4000E12C5 /* TravisSeeEye-Prefix.pch */ = {isa = PBXFileReference; path = "TravisSeeEye-Prefix.pch"; sourceTree = "<group>"; };
+		9AB36EA513ED87D4000E12C5 /* TravisSeeEye-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravisSeeEye-Prefix.pch"; sourceTree = "<group>"; };
 		9AB36EA613ED87D4000E12C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AB36EAA13ED87D4000E12C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9AB36EAD13ED87D4000E12C5 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
