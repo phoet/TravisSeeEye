@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AB36E9B13ED87D3000E12C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */; };
+		9AB36E9D13ED87D4000E12C5 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */; };
+		9AB36EA413ED87D4000E12C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EA213ED87D4000E12C5 /* InfoPlist.strings */; };
+		9AB36EA713ED87D4000E12C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB36EA613ED87D4000E12C5 /* main.m */; };
+		9AB36EAB13ED87D4000E12C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EA913ED87D4000E12C5 /* MainMenu.xib */; };
+		9AB36EAE13ED87D4000E12C5 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EAD13ED87D4000E12C5 /* rb_main.rb */; };
+		9AB36EB013ED87D4000E12C5 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EAF13ED87D4000E12C5 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AB36E9613ED87D3000E12C5 /* TravisSeeEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisSeeEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		9AB36EA113ED87D4000E12C5 /* TravisSeeEye-Info.plist */ = {isa = PBXFileReference; path = "TravisSeeEye-Info.plist"; sourceTree = "<group>"; };
+		9AB36EA313ED87D4000E12C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AB36EA513ED87D4000E12C5 /* TravisSeeEye-Prefix.pch */ = {isa = PBXFileReference; path = "TravisSeeEye-Prefix.pch"; sourceTree = "<group>"; };
+		9AB36EA613ED87D4000E12C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AB36EAA13ED87D4000E12C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9AB36EAD13ED87D4000E12C5 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		9AB36EAF13ED87D4000E12C5 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AB36E9313ED87D3000E12C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB36E9B13ED87D3000E12C5 /* Cocoa.framework in Frameworks */,
+				9AB36E9D13ED87D4000E12C5 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AB36E8B13ED87D3000E12C5 = {
+			isa = PBXGroup;
+			children = (
+				9AB36E9F13ED87D4000E12C5 /* TravisSeeEye */,
+				9AB36E9913ED87D3000E12C5 /* Frameworks */,
+				9AB36E9713ED87D3000E12C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AB36E9713ED87D3000E12C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AB36E9613ED87D3000E12C5 /* TravisSeeEye.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AB36E9913ED87D3000E12C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */,
+				9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB36E9F13ED87D4000E12C5 /* TravisSeeEye */ = {
+			isa = PBXGroup;
+			children = (
+				9AB36EAF13ED87D4000E12C5 /* AppDelegate.rb */,
+				9AB36EA813ED87D4000E12C5 /* Resources */,
+				9AB36EAC13ED87D4000E12C5 /* Other Sources */,
+				9AB36EA013ED87D4000E12C5 /* Supporting Files */,
+			);
+			path = TravisSeeEye;
+			sourceTree = "<group>";
+		};
+		9AB36EA013ED87D4000E12C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AB36EA113ED87D4000E12C5 /* TravisSeeEye-Info.plist */,
+				9AB36EA213ED87D4000E12C5 /* InfoPlist.strings */,
+				9AB36EA513ED87D4000E12C5 /* TravisSeeEye-Prefix.pch */,
+				9AB36EA613ED87D4000E12C5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AB36EA813ED87D4000E12C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AB36EA913ED87D4000E12C5 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9AB36EAC13ED87D4000E12C5 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9AB36EAD13ED87D4000E12C5 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9AB36E9E13ED87D4000E12C5 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 9AB36EB613ED87D4000E12C5 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		9AB36E9513ED87D3000E12C5 /* TravisSeeEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB36EB313ED87D4000E12C5 /* Build configuration list for PBXNativeTarget "TravisSeeEye" */;
+			buildPhases = (
+				9AB36E9213ED87D3000E12C5 /* Sources */,
+				9AB36E9313ED87D3000E12C5 /* Frameworks */,
+				9AB36E9413ED87D3000E12C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravisSeeEye;
+			productName = TravisSeeEye;
+			productReference = 9AB36E9613ED87D3000E12C5 /* TravisSeeEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AB36E8D13ED87D3000E12C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = tolingo;
+			};
+			buildConfigurationList = 9AB36E9013ED87D3000E12C5 /* Build configuration list for PBXProject "TravisSeeEye" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AB36E8B13ED87D3000E12C5;
+			productRefGroup = 9AB36E9713ED87D3000E12C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AB36E9513ED87D3000E12C5 /* TravisSeeEye */,
+				9AB36E9E13ED87D4000E12C5 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AB36E9413ED87D3000E12C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB36EA413ED87D4000E12C5 /* InfoPlist.strings in Resources */,
+				9AB36EAB13ED87D4000E12C5 /* MainMenu.xib in Resources */,
+				9AB36EAE13ED87D4000E12C5 /* rb_main.rb in Resources */,
+				9AB36EB013ED87D4000E12C5 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AB36E9213ED87D3000E12C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB36EA713ED87D4000E12C5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AB36EA213ED87D4000E12C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB36EA313ED87D4000E12C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AB36EA913ED87D4000E12C5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB36EAA13ED87D4000E12C5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AB36EB113ED87D4000E12C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AB36EB213ED87D4000E12C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AB36EB413ED87D4000E12C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravisSeeEye/TravisSeeEye-Prefix.pch";
+				INFOPLIST_FILE = "TravisSeeEye/TravisSeeEye-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9AB36EB513ED87D4000E12C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravisSeeEye/TravisSeeEye-Prefix.pch";
+				INFOPLIST_FILE = "TravisSeeEye/TravisSeeEye-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9AB36EB713ED87D4000E12C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		9AB36EB813ED87D4000E12C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AB36E9013ED87D3000E12C5 /* Build configuration list for PBXProject "TravisSeeEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB36EB113ED87D4000E12C5 /* Debug */,
+				9AB36EB213ED87D4000E12C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB36EB313ED87D4000E12C5 /* Build configuration list for PBXNativeTarget "TravisSeeEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB36EB413ED87D4000E12C5 /* Debug */,
+				9AB36EB513ED87D4000E12C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AB36EB613ED87D4000E12C5 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB36EB713ED87D4000E12C5 /* Debug */,
+				9AB36EB813ED87D4000E12C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AB36E8D13ED87D3000E12C5 /* Project object */;
+}
