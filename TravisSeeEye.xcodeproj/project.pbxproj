@@ -17,6 +17,7 @@
 		9AC65F1413F0437A000A8191 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1313F0437A000A8191 /* AppController.rb */; };
 		9AC65F1713F1AED4000A8191 /* tci-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1513F1AED4000A8191 /* tci-alt.png */; };
 		9AC65F1813F1AED4000A8191 /* tci.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1613F1AED4000A8191 /* tci.png */; };
+		9AC65F1A13F1B872000A8191 /* Growl.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1913F1B872000A8191 /* Growl.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9AC65F1313F0437A000A8191 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		9AC65F1513F1AED4000A8191 /* tci-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tci-alt.png"; sourceTree = "<group>"; };
 		9AC65F1613F1AED4000A8191 /* tci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tci.png; sourceTree = "<group>"; };
+		9AC65F1913F1B872000A8191 /* Growl.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Growl.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				9AB36EAC13ED87D4000E12C5 /* Other Sources */,
 				9AB36EA013ED87D4000E12C5 /* Supporting Files */,
 				9AC65F1313F0437A000A8191 /* AppController.rb */,
+				9AC65F1913F1B872000A8191 /* Growl.rb */,
 			);
 			path = TravisSeeEye;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				9AC65F1413F0437A000A8191 /* AppController.rb in Resources */,
 				9AC65F1713F1AED4000A8191 /* tci-alt.png in Resources */,
 				9AC65F1813F1AED4000A8191 /* tci.png in Resources */,
+				9AC65F1A13F1B872000A8191 /* Growl.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

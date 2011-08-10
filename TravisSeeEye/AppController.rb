@@ -2,6 +2,7 @@
 class AppController
   
   attr_accessor :statusMenu, :statusItem, :statusImage, :statusHighlightImage
+  attr_accessor :growl
   
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
@@ -15,8 +16,8 @@ class AppController
     bundle = NSBundle.mainBundle
     
     #Allocates and loads the images into the application which will be used for our NSStatusItem
-    @statusImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci", ofType: "png"));
-    @statusHighlightImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci-alt", ofType: "png"));
+    @statusImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci", ofType: "png"))
+    @statusHighlightImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci-alt", ofType: "png"))
     
     #Sets the images in our NSStatusItem
     @statusItem.setImage(statusImage)
@@ -28,10 +29,12 @@ class AppController
     @statusItem.setToolTip("My Custom Menu Item")
     #Enables highlighting
     @statusItem.setHighlightMode(true)
+    
+    @growl = Growl.new('de.nofail.tci', ['notification'], NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci", ofType: "png")))
   end
   
   def helloWorld(sender)
-    puts "hello world #{sender}"
+    @growl.notify('notification', 'moin', 'moin moin')
   end
 
 end
