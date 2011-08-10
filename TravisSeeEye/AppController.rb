@@ -1,7 +1,8 @@
 
-class AppController
+class AppController < NSWindowController
   
   attr_accessor :statusMenu, :statusItem, :statusImage, :statusHighlightImage
+  attr_accessor :preferencesWindow
   attr_accessor :growl
   
   def applicationDidFinishLaunching(a_notification)
@@ -35,6 +36,11 @@ class AppController
   
   def helloWorld(sender)
     @growl.notify('notification', 'moin', 'moin moin')
+  end
+  
+  def showPreferences(sender)
+    #    controller ||= initWithWindowNibName('Preferences')
+    #    controller.showWindow(self)
   end
 
 end
