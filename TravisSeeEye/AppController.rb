@@ -28,9 +28,11 @@ class AppController
       item.submenu.removeAllItems()
       Preferences.instance[:repos].each do |repo|
         mi = NSMenuItem.new
-        mi.title = repo
+        mi.title  = repo
         mi.action = 'showStatus:'
         mi.target = self
+        mi.image  = load_build_image(repo)
+        
         item.submenu.addItem(mi)
       end
     end
@@ -47,17 +49,15 @@ class AppController
     Queue.instance.refresh_results(nil)
   end
   
-  def refreshRepso(sender)
-    puts "repos #{Queue.instance.results}"
-  end
-  
   def showStatus(sender)
     alert = NSAlert.new
     alert.messageText = "Build result for #{sender.title}"
     alert.informativeText = Queue.instance.results[sender.title]
     alert.alertStyle = NSInformationalAlertStyle
-    alert.addButtonWithTitle("close")
-    response = alert.runModal
+    alert.addButtonWithTitle('close')
+    alert.icon = load_image('tci')
+    
+    alert.runModal()
   end
 
 end
