@@ -21,6 +21,7 @@
 		9AC65F1713F1AED4000A8191 /* tci-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1513F1AED4000A8191 /* tci-alt.png */; };
 		9AC65F1813F1AED4000A8191 /* tci.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1613F1AED4000A8191 /* tci.png */; };
 		9AC65F1A13F1B872000A8191 /* Growl.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1913F1B872000A8191 /* Growl.rb */; };
+		9AFA132913F42C2800B0E89B /* CoreExt.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA132813F42C2800B0E89B /* CoreExt.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9AC65F1513F1AED4000A8191 /* tci-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tci-alt.png"; sourceTree = "<group>"; };
 		9AC65F1613F1AED4000A8191 /* tci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tci.png; sourceTree = "<group>"; };
 		9AC65F1913F1B872000A8191 /* Growl.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Growl.rb; sourceTree = "<group>"; };
+		9AFA132813F42C2800B0E89B /* CoreExt.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = CoreExt.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		9AA8BACE13F422C100394D30 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9AFA132813F42C2800B0E89B /* CoreExt.rb */,
 				9AC65F1913F1B872000A8191 /* Growl.rb */,
 				9A54E8F513F3F59D00D39F07 /* Preferences.rb */,
 				9A54E8F713F3FBB500D39F07 /* Queue.rb */,
@@ -221,6 +224,7 @@
 				9A54E8F413F3F06300D39F07 /* PreferencesController.rb in Resources */,
 				9A54E8F613F3F59D00D39F07 /* Preferences.rb in Resources */,
 				9A54E8F813F3FBB500D39F07 /* Queue.rb in Resources */,
+				9AFA132913F42C2800B0E89B /* CoreExt.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

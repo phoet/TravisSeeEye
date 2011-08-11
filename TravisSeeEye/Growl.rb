@@ -6,7 +6,7 @@ class Growl
   
   def initialize
     @application_name = 'de.nofail.tci'
-    @application_icon = NSImage.alloc.initWithContentsOfFile(NSBundle.mainBundle.pathForResource("tci", ofType: "png")).TIFFRepresentation
+    @application_icon = load_image('tci').TIFFRepresentation
     @default_notifications = @notifications = ['notification']
     @center = NSDistributedNotificationCenter.defaultCenter
     

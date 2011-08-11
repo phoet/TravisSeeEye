@@ -202,6 +202,7 @@
 							<string key="NSFrame">{{244, 12}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="851822959"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="554465613">
 								<int key="NSCellFlags">67239424</int>
@@ -349,7 +350,7 @@
 							<object class="NSTextFieldCell" key="NSTitleCell">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
-								<string key="NSContents">Settings: (require restart)</string>
+								<string key="NSContents">Options: (requires restart)</string>
 								<object class="NSFont" key="NSSupport" id="26">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">11</double>
@@ -405,7 +406,7 @@
 											<string key="NSFrameSize">{312, 113}</string>
 											<reference key="NSSuperview" ref="220991709"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="63800055"/>
+											<reference key="NSNextKeyView" ref="254395637"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="718357178">
 												<reference key="NSNextResponder" ref="63800055"/>
@@ -540,7 +541,7 @@
 							<string key="NSFrame">{{20, 190}, {314, 132}}</string>
 							<reference key="NSSuperview" ref="851822959"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="220991709"/>
+							<reference key="NSNextKeyView" ref="63800055"/>
 							<int key="NSsFlags">561</int>
 							<reference key="NSVScroller" ref="91837072"/>
 							<reference key="NSHScroller" ref="254395637"/>
@@ -1096,7 +1097,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">691</int>
+			<int key="maxID">693</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

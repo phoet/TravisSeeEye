@@ -7,11 +7,9 @@ class AppController
   
   def awakeFromNib
     @statusItem = NSStatusBar.systemStatusBar.statusItemWithLength(NSSquareStatusItemLength)
-    
-    bundle = NSBundle.mainBundle
-    
-    @statusImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci", ofType: "png"))
-    @statusHighlightImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci-alt", ofType: "png"))
+        
+    @statusImage = load_image('tci')
+    @statusHighlightImage = load_image('tci-alt')
     
     @statusItem.setImage(@statusImage)
     @statusItem.setAlternateImage(@statusHighlightImage)

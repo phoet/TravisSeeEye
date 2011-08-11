@@ -14,7 +14,7 @@ class Queue
     @results = Hash.new({})
     @queue = Dispatch::Queue.new('de.nofail.tci')
     @growl = Growl.instance
-    @timer = NSTimer.scheduledTimerWithTimeInterval(@preferences[:interval], target: self, selector: 'refresh_results:', userInfo: nil, repeats: true)
+    start_timer(@preferences[:interval], :refresh_results)
   end
   
   def refresh_results(timer)
