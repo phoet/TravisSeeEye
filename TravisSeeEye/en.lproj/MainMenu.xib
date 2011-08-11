@@ -62,6 +62,10 @@
 						<string key="NSTitle">Refresh</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
+						<object class="NSCustomResource" key="NSImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">NSRefreshTemplate</string>
+						</object>
 						<object class="NSCustomResource" key="NSOnImage" id="162574739">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
@@ -76,6 +80,10 @@
 						<string key="NSTitle">Repos</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
+						<object class="NSCustomResource" key="NSImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">NSListViewTemplate</string>
+						</object>
 						<reference key="NSOnImage" ref="162574739"/>
 						<reference key="NSMixedImage" ref="980418958"/>
 						<string key="NSAction">submenuAction:</string>
@@ -140,7 +148,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{169, 105}, {354, 342}}</string>
 				<int key="NSWTFlags">-461897728</int>
-				<string key="NSWindowTitle">Window</string>
+				<string key="NSWindowTitle">Preferences</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
 				<object class="NSView" key="NSWindowView" id="851822959">
@@ -453,6 +461,7 @@
 														<string key="NSContents">Text Cell</string>
 														<reference key="NSSupport" ref="469653843"/>
 														<reference key="NSControlView" ref="540378609"/>
+														<bool key="NSDrawsBackground">YES</bool>
 														<object class="NSColor" key="NSBackgroundColor" id="192747737">
 															<int key="NSColorSpace">6</int>
 															<string key="NSCatalogName">System</string>
@@ -480,9 +489,10 @@
 												</object>
 											</object>
 											<double key="NSRowHeight">17</double>
-											<int key="NSTvFlags">-700448768</int>
+											<int key="NSTvFlags">-968884224</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
+											<int key="NSGridStyleMask">2</int>
 											<int key="NSColumnAutoresizingStyle">4</int>
 											<int key="NSDraggingSourceMaskForLocal">15</int>
 											<int key="NSDraggingSourceMaskForNonLocal">0</int>
@@ -1327,13 +1337,17 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>NSListViewTemplate</string>
 				<string>NSMenuCheckmark</string>
 				<string>NSMenuMixedState</string>
+				<string>NSRefreshTemplate</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{11, 10}</string>
 				<string>{9, 8}</string>
 				<string>{7, 2}</string>
+				<string>{10, 12}</string>
 			</object>
 		</object>
 	</data>
