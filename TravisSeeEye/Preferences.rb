@@ -1,4 +1,8 @@
+require 'singleton'
+
 class Preferences
+  
+  include Singleton
   
   def initialize
     @defaults = {repos: ['travis-ci/travis-ci'], interval: 60, remote: 'http://travis-ci.org/' }

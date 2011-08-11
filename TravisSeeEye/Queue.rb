@@ -1,14 +1,17 @@
 
-require "json"
-require "net/http"
+require 'json'
+require 'net/http'
+require 'singleton'
 
 class Queue
   
-  def initialize(preferences)
-    @preferences = preferences
+  include Singleton
+  
+  def initialize
+    @preferences = Preferences.instance
     @results = Hash.new({})
     @queue = Dispatch::Queue.new('de.nofail.tci')
-    @growl = Growl.new
+    @growl = Growl.instance
     @timer = NSTimer.scheduledTimerWithTimeInterval(@preferences[:interval],
                                                     target: self,
                                                     selector: 'refresh_results:',

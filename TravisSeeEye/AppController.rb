@@ -3,10 +3,6 @@ class AppController < NSWindowController
   
   attr_accessor :statusMenu, :statusItem, :statusImage, :statusHighlightImage, :preferencesWindow
   
-  def initialize
-    @growl = Growl.new
-  end
-  
   # Cocoa
   
   def awakeFromNib
@@ -23,12 +19,14 @@ class AppController < NSWindowController
     @statusItem.setMenu(@statusMenu)
     @statusItem.setToolTip("Travis-CI")
     @statusItem.setHighlightMode(true)
+    
+    refreshResults(self)
   end
   
   # Actions
   
-  def helloWorld(sender)
-    @growl.notify('notification', 'moin', 'moin moin')
+  def refreshResults(sender)
+    Queue.instance.refresh_results(nil)
   end
 
 end

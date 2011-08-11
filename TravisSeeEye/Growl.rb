@@ -1,5 +1,8 @@
+require 'singleton'
 
 class Growl
+  
+  include Singleton
   
   def initialize
     @application_name = 'de.nofail.tci'

@@ -3,10 +3,8 @@ class PreferencesController
   attr_accessor :preferencesPanel, :reposTableView, :intervalInput, :remoteInput
   
   def initialize
-    @preferences = Preferences.new
+    @preferences = Preferences.instance
     @repos = @preferences[:repos]
-    @queue = Queue.new(@preferences)
-    @queue.refresh_results(nil)
   end
   
   # Cocoa
