@@ -1,20 +1,18 @@
-#framework 'Cocoa'
-#framework 'Foundation'
 
 class Growl
-  def initialize(app, notifications, icon = nil)
-    @application_name = app
-    @application_icon = icon
-    @notifications = notifications
-    @default_notifications = notifications
+  
+  def initialize
+    @application_name = 'de.nofail.tci'
+    @application_icon = NSImage.alloc.initWithContentsOfFile(NSBundle.mainBundle.pathForResource("tci", ofType: "png"))
+    @default_notifications = @notifications = ['notification']
     @center = NSDistributedNotificationCenter.defaultCenter
     send_registration!
   end
   
-  def notify(notification, title, description, options = {})
+  def notify(title, description, options = {})
     dict = {
       :ApplicationName => @application_name,
-      :NotificationName => notification,
+      :NotificationName => 'notification',
       :NotificationTitle => title,
       :NotificationDescription => description,
       :NotificationPriority => options[:priority] || 0,

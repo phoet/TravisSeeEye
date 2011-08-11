@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A54E8F413F3F06300D39F07 /* PreferencesController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A54E8F313F3F06300D39F07 /* PreferencesController.rb */; };
+		9A54E8F613F3F59D00D39F07 /* Preferences.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A54E8F513F3F59D00D39F07 /* Preferences.rb */; };
+		9A54E8F813F3FBB500D39F07 /* Queue.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A54E8F713F3FBB500D39F07 /* Queue.rb */; };
 		9AB36E9B13ED87D3000E12C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */; };
 		9AB36E9D13ED87D4000E12C5 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */; };
 		9AB36EA413ED87D4000E12C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EA213ED87D4000E12C5 /* InfoPlist.strings */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A54E8F313F3F06300D39F07 /* PreferencesController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferencesController.rb; sourceTree = "<group>"; };
+		9A54E8F513F3F59D00D39F07 /* Preferences.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Preferences.rb; sourceTree = "<group>"; };
+		9A54E8F713F3FBB500D39F07 /* Queue.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Queue.rb; sourceTree = "<group>"; };
 		9AB36E9613ED87D3000E12C5 /* TravisSeeEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisSeeEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -84,6 +90,9 @@
 				9AB36EA013ED87D4000E12C5 /* Supporting Files */,
 				9AC65F1313F0437A000A8191 /* AppController.rb */,
 				9AC65F1913F1B872000A8191 /* Growl.rb */,
+				9A54E8F313F3F06300D39F07 /* PreferencesController.rb */,
+				9A54E8F513F3F59D00D39F07 /* Preferences.rb */,
+				9A54E8F713F3FBB500D39F07 /* Queue.rb */,
 			);
 			path = TravisSeeEye;
 			sourceTree = "<group>";
@@ -193,6 +202,9 @@
 				9AC65F1713F1AED4000A8191 /* tci-alt.png in Resources */,
 				9AC65F1813F1AED4000A8191 /* tci.png in Resources */,
 				9AC65F1A13F1B872000A8191 /* Growl.rb in Resources */,
+				9A54E8F413F3F06300D39F07 /* PreferencesController.rb in Resources */,
+				9A54E8F613F3F59D00D39F07 /* Preferences.rb in Resources */,
+				9A54E8F813F3FBB500D39F07 /* Queue.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

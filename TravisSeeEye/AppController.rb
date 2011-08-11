@@ -1,46 +1,34 @@
 
 class AppController < NSWindowController
   
-  attr_accessor :statusMenu, :statusItem, :statusImage, :statusHighlightImage
-  attr_accessor :preferencesWindow
-  attr_accessor :growl
+  attr_accessor :statusMenu, :statusItem, :statusImage, :statusHighlightImage, :preferencesWindow
   
-  def applicationDidFinishLaunching(a_notification)
-    # Insert code here to initialize your application
+  def initialize
+    @growl = Growl.new
   end
   
+  # Cocoa
+  
   def awakeFromNib
-    #Create the NSStatusBar and set its length
     @statusItem = NSStatusBar.systemStatusBar.statusItemWithLength(NSSquareStatusItemLength)
     
-    #Used to detect where our files are
     bundle = NSBundle.mainBundle
     
-    #Allocates and loads the images into the application which will be used for our NSStatusItem
     @statusImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci", ofType: "png"))
     @statusHighlightImage = NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci-alt", ofType: "png"))
     
-    #Sets the images in our NSStatusItem
-    @statusItem.setImage(statusImage)
-    @statusItem.setAlternateImage(statusHighlightImage)
+    @statusItem.setImage(@statusImage)
+    @statusItem.setAlternateImage(@statusHighlightImage)
     
-    #Tells the NSStatusItem what menu to load
-    @statusItem.setMenu(statusMenu)
-    #Sets the tooptip for our item
-    @statusItem.setToolTip("My Custom Menu Item")
-    #Enables highlighting
+    @statusItem.setMenu(@statusMenu)
+    @statusItem.setToolTip("Travis-CI")
     @statusItem.setHighlightMode(true)
-    
-    @growl = Growl.new('de.nofail.tci', ['notification'], NSImage.alloc.initWithContentsOfFile(bundle.pathForResource("tci", ofType: "png")))
   end
+  
+  # Actions
   
   def helloWorld(sender)
     @growl.notify('notification', 'moin', 'moin moin')
-  end
-  
-  def showPreferences(sender)
-    #    controller ||= initWithWindowNibName('Preferences')
-    #    controller.showWindow(self)
   end
 
 end
