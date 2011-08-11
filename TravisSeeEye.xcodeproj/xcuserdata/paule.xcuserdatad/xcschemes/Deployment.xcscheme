@@ -13,6 +13,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9AB36E9513ED87D3000E12C5"
+               BuildableName = "TravisSeeEye.app"
+               BlueprintName = "TravisSeeEye"
+               ReferencedContainer = "container:TravisSeeEye.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AB36E9E13ED87D4000E12C5"
                BuildableName = "Deployment"
                BlueprintName = "Deployment"
