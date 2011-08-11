@@ -1,7 +1,7 @@
 
 class AppController < NSWindowController
   
-  attr_accessor :statusMenu, :statusItem, :statusImage, :statusHighlightImage, :preferencesWindow
+  attr_accessor :statusMenu, :statusItem, :statusImage, :reposStatusItem, :statusHighlightImage, :preferencesWindow
   
   # Cocoa
   
@@ -23,10 +23,38 @@ class AppController < NSWindowController
     refreshResults(self)
   end
   
+  # Menu Delegate
+  
+  def menu(menu, willHighlightItem:item)
+    if item == @reposStatusItem
+      item.submenu.removeAllItems()
+      Preferences.instance[:repos].each do |repo|
+        mi = NSMenuItem.new
+        mi.title = repo
+        mi.action = 'showStatus:'
+        mi.target = self
+        item.submenu.addItem(mi)
+      end
+    end
+  end
+  
   # Actions
   
   def refreshResults(sender)
     Queue.instance.refresh_results(nil)
+  end
+  
+  def refreshRepso(sender)
+    puts "repos #{Queue.instance.results}"
+  end
+  
+  def showStatus(sender)
+    alert = NSAlert.new
+    alert.messageText = "Build result for #{sender.title}"
+    alert.informativeText = Queue.instance.results[sender.title]
+    alert.alertStyle = NSInformationalAlertStyle
+    alert.addButtonWithTitle("close")
+    response = alert.runModal
   end
 
 end

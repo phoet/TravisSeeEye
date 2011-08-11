@@ -7,6 +7,8 @@ class Queue
   
   include Singleton
   
+  attr_reader :results
+  
   def initialize
     @preferences = Preferences.instance
     @results = Hash.new({})
