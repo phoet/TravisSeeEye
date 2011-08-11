@@ -46,7 +46,7 @@ class AppController
   end
   
   def refreshResults(sender)
-    Queue.instance.refresh_results(nil)
+    Queue.instance.refresh_results(true)
   end
   
   def showStatus(sender)

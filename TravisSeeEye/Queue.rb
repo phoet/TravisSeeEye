@@ -14,17 +14,22 @@ class Queue
     @results = Hash.new({})
     @queue = Dispatch::Queue.new('de.nofail.tci')
     @growl = Growl.instance
-    start_timer(@preferences[:interval], :refresh_results)
+    
+    start_timer(@preferences[:interval], :refresh_results_for_timer)
   end
   
-  def refresh_results(timer)
+  def refresh_results_for_timer(timer)
+    refresh_results()
+  end
+  
+  def refresh_results(force=false)
     @preferences[:repos].each do |repo|
       @queue.async do
         begin
           puts url = "#{@preferences[:remote]}#{repo}.json"
           response = Net::HTTP.get_response(URI.parse(url))
           result = JSON.parse(response.body)
-          if @results[repo].empty? || (result['last_build_finished_at'] && @results[repo]['last_build_id'] != result['last_build_id'])
+          if force || @results[repo].empty? || (result['last_build_finished_at'] && @results[repo]['last_build_id'] != result['last_build_id'])
             @growl.notify(repo, result['status'])
             @results[repo] = result
             puts "new build result, growl-notification for #{result}"
