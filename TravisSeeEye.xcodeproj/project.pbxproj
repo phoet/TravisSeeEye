@@ -56,6 +56,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AA8BACD13F420FC00394D30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AC65F1313F0437A000A8191 /* AppController.rb */,
+				9A54E8F313F3F06300D39F07 /* PreferencesController.rb */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9AA8BACE13F422C100394D30 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9AC65F1913F1B872000A8191 /* Growl.rb */,
+				9A54E8F513F3F59D00D39F07 /* Preferences.rb */,
+				9A54E8F713F3FBB500D39F07 /* Queue.rb */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		9AB36E8B13ED87D3000E12C5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,14 +104,11 @@
 		9AB36E9F13ED87D4000E12C5 /* TravisSeeEye */ = {
 			isa = PBXGroup;
 			children = (
+				9AA8BACD13F420FC00394D30 /* Controller */,
 				9AB36EA813ED87D4000E12C5 /* Resources */,
 				9AB36EAC13ED87D4000E12C5 /* Other Sources */,
 				9AB36EA013ED87D4000E12C5 /* Supporting Files */,
-				9AC65F1313F0437A000A8191 /* AppController.rb */,
-				9AC65F1913F1B872000A8191 /* Growl.rb */,
-				9A54E8F313F3F06300D39F07 /* PreferencesController.rb */,
-				9A54E8F513F3F59D00D39F07 /* Preferences.rb */,
-				9A54E8F713F3FBB500D39F07 /* Queue.rb */,
+				9AA8BACE13F422C100394D30 /* Helper */,
 			);
 			path = TravisSeeEye;
 			sourceTree = "<group>";
