@@ -1,7 +1,7 @@
 
-class AppController < NSWindowController
+class AppController
   
-  attr_accessor :statusMenu, :statusItem, :statusImage, :reposStatusItem, :statusHighlightImage, :preferencesWindow
+  attr_accessor :statusMenu, :statusItem, :statusImage, :reposStatusItem, :statusHighlightImage, :preferencesPanel
   
   # Cocoa
   
@@ -39,6 +39,11 @@ class AppController < NSWindowController
   end
   
   # Actions
+  
+  def showPreferences(sender)
+    NSApp.activateIgnoringOtherApps(true)
+    @preferencesPanel.makeKeyAndOrderFront(self)
+  end
   
   def refreshResults(sender)
     Queue.instance.refresh_results(nil)

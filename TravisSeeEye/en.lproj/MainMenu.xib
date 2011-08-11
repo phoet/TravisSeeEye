@@ -202,7 +202,6 @@
 							<string key="NSFrame">{{244, 12}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="851822959"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="554465613">
 								<int key="NSCellFlags">67239424</int>
@@ -406,7 +405,7 @@
 											<string key="NSFrameSize">{312, 113}</string>
 											<reference key="NSSuperview" ref="220991709"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="254395637"/>
+											<reference key="NSNextKeyView" ref="63800055"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="718357178">
 												<reference key="NSNextResponder" ref="63800055"/>
@@ -541,7 +540,7 @@
 							<string key="NSFrame">{{20, 190}, {314, 132}}</string>
 							<reference key="NSSuperview" ref="851822959"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="63800055"/>
+							<reference key="NSNextKeyView" ref="220991709"/>
 							<int key="NSsFlags">561</int>
 							<reference key="NSVScroller" ref="91837072"/>
 							<reference key="NSHScroller" ref="254395637"/>
@@ -589,14 +588,6 @@
 						<reference key="destination" ref="928834083"/>
 					</object>
 					<int key="connectionID">541</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">makeKeyAndOrderFront:</string>
-						<reference key="source" ref="805101745"/>
-						<reference key="destination" ref="328443636"/>
-					</object>
-					<int key="connectionID">628</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -685,6 +676,22 @@
 						<reference key="destination" ref="567458939"/>
 					</object>
 					<int key="connectionID">689</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showPreferences:</string>
+						<reference key="source" ref="928834083"/>
+						<reference key="destination" ref="328443636"/>
+					</object>
+					<int key="connectionID">690</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">preferencesPanel</string>
+						<reference key="source" ref="928834083"/>
+						<reference key="destination" ref="805101745"/>
+					</object>
+					<int key="connectionID">691</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1089,23 +1096,27 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">689</int>
+			<int key="maxID">691</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
 					<string key="className">AppController</string>
-					<string key="superclassName">NSWindowController</string>
+					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>refreshRepso:</string>
 							<string>refreshResults:</string>
+							<string>showPreferences:</string>
+							<string>showStatus:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -1116,6 +1127,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>refreshRepso:</string>
 							<string>refreshResults:</string>
+							<string>showPreferences:</string>
+							<string>showStatus:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1127,13 +1140,21 @@
 								<string key="name">refreshResults:</string>
 								<string key="candidateClassName">id</string>
 							</object>
+							<object class="IBActionInfo">
+								<string key="name">showPreferences:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">showStatus:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>preferencesWindow</string>
+							<string>preferencesPanel</string>
 							<string>reposStatusItem</string>
 							<string>statusHighlightImage</string>
 							<string>statusImage</string>
@@ -1154,7 +1175,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>preferencesWindow</string>
+							<string>preferencesPanel</string>
 							<string>reposStatusItem</string>
 							<string>statusHighlightImage</string>
 							<string>statusImage</string>
@@ -1164,7 +1185,7 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
-								<string key="name">preferencesWindow</string>
+								<string key="name">preferencesPanel</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">
