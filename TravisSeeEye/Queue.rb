@@ -1,4 +1,4 @@
-
+require 'socket'
 require 'json'
 require 'net/http'
 require 'singleton'
@@ -23,6 +23,7 @@ class Queue
   end
   
   def refresh_results(force=false)
+    @growl.notify('Error', "No connection to the internet!") and return if not network_available?
     @preferences[:repos].each do |repo|
       @queue.async do
         begin
@@ -42,6 +43,12 @@ class Queue
         end
       end
     end
+  end
+  
+  def network_available?
+    Socket.getaddrinfo('travis-ci.org', nil)
+  rescue
+    false
   end
   
 end
