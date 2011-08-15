@@ -1,7 +1,8 @@
 
 class AppController
   
-  attr_accessor :statusMenu, :statusItem, :statusImage, :reposStatusItem, :statusHighlightImage, :preferencesPanel
+  attr_accessor :statusMenu, :statusItem, :statusImage, :reposStatusItem, :statusHighlightImage
+  attr_accessor :preferencesPanel, :webPanel
   
   # Cocoa
   
@@ -50,14 +51,9 @@ class AppController
   end
   
   def showStatus(sender)
-    alert = NSAlert.new
-    alert.messageText = "Build result for #{sender.title}"
-    alert.informativeText = Queue.instance.results[sender.title]
-    alert.alertStyle = NSInformationalAlertStyle
-    alert.addButtonWithTitle('close')
-    alert.icon = load_image('tci')
-    
-    alert.runModal()
+    NSApp.activateIgnoringOtherApps(true)
+    @webPanel.delegate.showBuild(Queue.instance.results[sender.title])
+    @webPanel.makeKeyAndOrderFront(self)
   end
 
 end

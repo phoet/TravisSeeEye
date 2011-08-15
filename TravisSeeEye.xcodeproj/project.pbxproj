@@ -10,6 +10,8 @@
 		9A54E8F413F3F06300D39F07 /* PreferencesController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A54E8F313F3F06300D39F07 /* PreferencesController.rb */; };
 		9A54E8F613F3F59D00D39F07 /* Preferences.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A54E8F513F3F59D00D39F07 /* Preferences.rb */; };
 		9A54E8F813F3FBB500D39F07 /* Queue.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A54E8F713F3FBB500D39F07 /* Queue.rb */; };
+		9A84A36213F967BE000F0DA1 /* BuildsController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9A84A36113F967BE000F0DA1 /* BuildsController.rb */; };
+		9A84A36613F96CBB000F0DA1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A84A36513F96CBB000F0DA1 /* WebKit.framework */; };
 		9AB36E9B13ED87D3000E12C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */; };
 		9AB36E9D13ED87D4000E12C5 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */; };
 		9AB36EA413ED87D4000E12C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EA213ED87D4000E12C5 /* InfoPlist.strings */; };
@@ -28,6 +30,8 @@
 		9A54E8F313F3F06300D39F07 /* PreferencesController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferencesController.rb; sourceTree = "<group>"; };
 		9A54E8F513F3F59D00D39F07 /* Preferences.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Preferences.rb; sourceTree = "<group>"; };
 		9A54E8F713F3FBB500D39F07 /* Queue.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Queue.rb; sourceTree = "<group>"; };
+		9A84A36113F967BE000F0DA1 /* BuildsController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = BuildsController.rb; sourceTree = "<group>"; };
+		9A84A36513F96CBB000F0DA1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9AB36E9613ED87D3000E12C5 /* TravisSeeEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisSeeEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A84A36613F96CBB000F0DA1 /* WebKit.framework in Frameworks */,
 				9AB36E9B13ED87D3000E12C5 /* Cocoa.framework in Frameworks */,
 				9AB36E9D13ED87D4000E12C5 /* MacRuby.framework in Frameworks */,
 			);
@@ -63,6 +68,7 @@
 			children = (
 				9AC65F1313F0437A000A8191 /* AppController.rb */,
 				9A54E8F313F3F06300D39F07 /* PreferencesController.rb */,
+				9A84A36113F967BE000F0DA1 /* BuildsController.rb */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -98,6 +104,7 @@
 		9AB36E9913ED87D3000E12C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A84A36513F96CBB000F0DA1 /* WebKit.framework */,
 				9AB36E9A13ED87D3000E12C5 /* Cocoa.framework */,
 				9AB36E9C13ED87D4000E12C5 /* MacRuby.framework */,
 			);
@@ -225,6 +232,7 @@
 				9A54E8F613F3F59D00D39F07 /* Preferences.rb in Resources */,
 				9A54E8F813F3FBB500D39F07 /* Queue.rb in Resources */,
 				9AFA132913F42C2800B0E89B /* CoreExt.rb in Resources */,
+				9A84A36213F967BE000F0DA1 /* BuildsController.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
