@@ -16,7 +16,7 @@
 		9AB36EA713ED87D4000E12C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB36EA613ED87D4000E12C5 /* main.m */; };
 		9AB36EAB13ED87D4000E12C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EA913ED87D4000E12C5 /* MainMenu.xib */; };
 		9AB36EAE13ED87D4000E12C5 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AB36EAD13ED87D4000E12C5 /* rb_main.rb */; };
-		9AC65F1113F042E7000A8191 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1013F042E7000A8191 /* README */; };
+		9AC65F1113F042E7000A8191 /* README.rdoc in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1013F042E7000A8191 /* README.rdoc */; };
 		9AC65F1413F0437A000A8191 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1313F0437A000A8191 /* AppController.rb */; };
 		9AC65F1713F1AED4000A8191 /* tci-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1513F1AED4000A8191 /* tci-alt.png */; };
 		9AC65F1813F1AED4000A8191 /* tci.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC65F1613F1AED4000A8191 /* tci.png */; };
@@ -37,7 +37,7 @@
 		9AB36EA613ED87D4000E12C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AB36EAA13ED87D4000E12C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9AB36EAD13ED87D4000E12C5 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
-		9AC65F1013F042E7000A8191 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		9AC65F1013F042E7000A8191 /* README.rdoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rdoc; sourceTree = SOURCE_ROOT; };
 		9AC65F1313F0437A000A8191 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		9AC65F1513F1AED4000A8191 /* tci-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tci-alt.png"; sourceTree = "<group>"; };
 		9AC65F1613F1AED4000A8191 /* tci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tci.png; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			children = (
 				9AC65F1513F1AED4000A8191 /* tci-alt.png */,
 				9AC65F1613F1AED4000A8191 /* tci.png */,
-				9AC65F1013F042E7000A8191 /* README */,
+				9AC65F1013F042E7000A8191 /* README.rdoc */,
 				9AB36EA113ED87D4000E12C5 /* TravisSeeEye-Info.plist */,
 				9AB36EA213ED87D4000E12C5 /* InfoPlist.strings */,
 				9AB36EA513ED87D4000E12C5 /* TravisSeeEye-Prefix.pch */,
@@ -216,7 +216,7 @@
 				9AB36EA413ED87D4000E12C5 /* InfoPlist.strings in Resources */,
 				9AB36EAB13ED87D4000E12C5 /* MainMenu.xib in Resources */,
 				9AB36EAE13ED87D4000E12C5 /* rb_main.rb in Resources */,
-				9AC65F1113F042E7000A8191 /* README in Resources */,
+				9AC65F1113F042E7000A8191 /* README.rdoc in Resources */,
 				9AC65F1413F0437A000A8191 /* AppController.rb in Resources */,
 				9AC65F1713F1AED4000A8191 /* tci-alt.png in Resources */,
 				9AC65F1813F1AED4000A8191 /* tci.png in Resources */,
