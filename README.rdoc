@@ -12,11 +12,11 @@ http://f.cl.ly/items/3g1f2i0U3G221i2A113Q/tci.png
 
 RESOURCES:
 
-http://www.sonsothunder.com/devres/revolution/tutorials/StatusMenu.html
-https://gist.github.com/941730
-https://gist.github.com/245402/f4a7bc1c7b32bd3975d0203f22cd7a920af2fe56
-https://github.com/TomK32/macruby-statusmenu
-http://developer.apple.com/cocoa/cocoabindings.html
-http://developer.apple.com/library/mac/#featuredarticles/UsingMacRuby/_index.html
-http://redwoodapp.posterous.com/macruby-and-xcode-4-build-a-self-contained-ma
-http://developer.apple.com/library/mac/#documentation/Networking/Conceptual/SystemConfigFrameworks/SC_ReachConnect/SC_ReachConnect.html#//apple_ref/doc/uid/TP40001065-CH204-BHAFBAHI
+* http://www.sonsothunder.com/devres/revolution/tutorials/StatusMenu.html
+* https://gist.github.com/941730
+* https://gist.github.com/245402/f4a7bc1c7b32bd3975d0203f22cd7a920af2fe56
+* https://github.com/TomK32/macruby-statusmenu
+* http://developer.apple.com/cocoa/cocoabindings.html
+* http://developer.apple.com/library/mac/#featuredarticles/UsingMacRuby/_index.html
+* http://redwoodapp.posterous.com/macruby-and-xcode-4-build-a-self-contained-ma
+* http://developer.apple.com/library/mac/#documentation/Networking/Conceptual/SystemConfigFrameworks/SC_ReachConnect/SC_ReachConnect.html#//apple_ref/doc/uid/TP40001065-CH204-BHAFBAHI
